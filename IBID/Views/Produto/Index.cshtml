@@ -1,19 +1,32 @@
 @model IEnumerable<IBID.Models.ProdutoModel>
 
+
 <h1>Seus produtos</h1>
 
 <br>
 
-<a asp-action="Criar" class="btn btn-success">Criar Produto da IBID</a>
+<a asp-action="Criar" class="btn btn-success"><i class="bi bi-file-earmark-plus"></i> Criar Produto da IBID</a>
 
 <br>
 
+<br>
+
+<br>
+
+   
+     @if(TempData["MensagemSucesso"] != null){
+        <div class="alert alert-success text-light" role="alert">
+          @TempData["MensagemSucesso"]
+        </div>
+    }
+<br>
 
 @{
     ViewData["Title"] = "Produtos criados";
 }
+<br>
 
-<table class="table">
+   <table id="Produtos"  class="table table-light table-hover mt-5">
     <thead>
         <tr>
             <th>
@@ -48,11 +61,13 @@
                     @Html.DisplayFor(model => item.DataDeCadastro)
                 </td>
                 <td>
-                    <a asp-action="Editar" asp-route-id="@item.Id" class="btn btn-warning">Editar</a> |
-                    <a asp-action="Detalhes" asp-route-id="@item.Id" class="btn btn-primary">Detalhes</a> |
-                    <a asp-action="Deletar" asp-route-id="@item.Id" class="btn btn-danger">Deletar</a> 
+                    <a asp-action="Editar" asp-route-id="@item.Id" class="btn btn-warning"><i class="bi bi-pencil-square"></i> Editar</a> |
+                    <a asp-action="Detalhes" asp-route-id="@item.Id" class="btn btn-primary"><i class="bi bi-zoom-in"></i> Detalhes</a> |
+                    <a asp-action="Deletar" asp-route-id="@item.Id" class="btn btn-danger"><i class="bi bi-trash3-fill"></i> Deletar</a> 
                 </td>
             </tr>
         }
     </tbody>
 </table> 
+    
+   

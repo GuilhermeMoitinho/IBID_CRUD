@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Guilherme Moitinho\\Desktop\\IBID\\IBID.csproj": {}
+    "C:\\Users\\Guilherme Moitinho\\Desktop\\Estudo programa\\CRUD_IBID\\IBID\\IBID.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Guilherme Moitinho\\Desktop\\IBID\\IBID.csproj": {
+    "C:\\Users\\Guilherme Moitinho\\Desktop\\Estudo programa\\CRUD_IBID\\IBID\\IBID.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Guilherme Moitinho\\Desktop\\IBID\\IBID.csproj",
+        "projectUniqueName": "C:\\Users\\Guilherme Moitinho\\Desktop\\Estudo programa\\CRUD_IBID\\IBID\\IBID.csproj",
         "projectName": "IBID",
-        "projectPath": "C:\\Users\\Guilherme Moitinho\\Desktop\\IBID\\IBID.csproj",
+        "projectPath": "C:\\Users\\Guilherme Moitinho\\Desktop\\Estudo programa\\CRUD_IBID\\IBID\\IBID.csproj",
         "packagesPath": "C:\\Users\\Guilherme Moitinho\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Guilherme Moitinho\\Desktop\\IBID\\obj\\",
+        "outputPath": "C:\\Users\\Guilherme Moitinho\\Desktop\\Estudo programa\\CRUD_IBID\\IBID\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -65,13 +65,17 @@ namespace IBID.Controllers
             model.DataDeCadastro.ToString();
             try
             {
-                if(model == null || model.DataDeCadastro > DateTime.Now)
-                {
+                if(model == null || model.DataDeCadastro > DateTime.Now || !ModelState.IsValid)
+                {  
                     return View();
                 }
 
+                
+
                 _context.Produtos.Add(model);
                 _context.SaveChanges();
+
+                TempData["MensagemSucesso"] = "Criação realizada com sucesso!";
 
                 return RedirectToAction(nameof(Index));
 
@@ -88,8 +92,10 @@ namespace IBID.Controllers
 
             var ProdutoBanco = _context.Produtos.Find(model.Id);
 
-            if(!ModelState.IsValid)
-                    return BadRequest(ModelState);
+            if(model.Id == null || model.Id == 0 || !ModelState.IsValid)
+            {
+                return View();
+            }
 
             ProdutoBanco.Nome = model.Nome;
             ProdutoBanco.Preco = model.Preco;
@@ -98,16 +104,28 @@ namespace IBID.Controllers
             _context.Produtos.Update(ProdutoBanco);
             _context.SaveChanges();
 
+            TempData["MensagemSucesso"] = "Edição realizada com sucesso!";
+
+
             return RedirectToAction(nameof(Index));
 
         }
 
         [HttpPost]
         public IActionResult Deletar(ProdutoModel model){
+
+            if(model.Id == null || model.Id == 0)
+            {
+                return View();
+            }
+
             var ProdutoBanco = _context.Produtos.Find(model.Id);
 
             _context.Produtos.Remove(ProdutoBanco);
             _context.SaveChanges();
+
+            TempData["MensagemSucesso"] = "Remoção realizada com sucesso!";
+
 
             return RedirectToAction(nameof(Index));
         }

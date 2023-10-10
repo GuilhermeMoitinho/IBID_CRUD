@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Y5xcoW3eNcfnHF+Is/FyMoQjA/zQz+QuTN45pNwO2KPM+VqSyUGLr79XKFrcHWUV/Lu+qZlLjmjbTFUZw2c2gQ==",
+  "dgSpecHash": "sJzcPhWo6bkQDxD603VLcLXDhjafkBE+bXb7VfRh56Vu/TafQVRx5WAETwivFdmj1kx/I6QNeoyxXBx5TJLGgg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Guilherme Moitinho\\Desktop\\IBID\\IBID.csproj",
+  "projectFilePath": "C:\\Users\\Guilherme Moitinho\\Desktop\\Estudo programa\\CRUD_IBID\\IBID\\IBID.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Guilherme Moitinho\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\Guilherme Moitinho\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
